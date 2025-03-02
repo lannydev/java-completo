@@ -8,15 +8,14 @@ public class Triangulo {
 		
 	
 	
-	public double calcularAreaTriangulo(double ladoA, double ladoB, double ladoC) {
+	public double area() {
 		
 		double p = (ladoA + ladoB + ladoC)/2;
 		
-		double area = Math.sqrt(p*(p - ladoA) * (p - ladoB) * (p - ladoC));
+		return Math.sqrt(p*(p - ladoA) * (p - ladoB) * (p - ladoC));
 		
-		System.out.printf("A área do triangulo é: %.4f%n ", area);
 		
-		return area;
+		
 		
 		
 	}

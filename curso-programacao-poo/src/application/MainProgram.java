@@ -19,7 +19,8 @@ public class MainProgram {
 		triangulo1.ladoB = sc.nextDouble();
 		triangulo1.ladoC = sc.nextDouble();
 		
-		double areaTriangulo1 = triangulo1.calcularAreaTriangulo(triangulo1.ladoA, triangulo1.ladoB, triangulo1.ladoC);
+		double areaTriangulo1 = triangulo1.area();
+		System.out.printf("A área do primeiro triangulo é %2f%n", areaTriangulo1);
 		
 		
 		Triangulo triangulo2 = new Triangulo();
@@ -28,14 +29,14 @@ public class MainProgram {
 		triangulo2.ladoB = sc.nextDouble();
 		triangulo2.ladoC = sc.nextDouble();
 		
-		double areaTriangulo2 = triangulo2.calcularAreaTriangulo(triangulo2.ladoA, triangulo2.ladoB, triangulo2.ladoC);
-		
+		double areaTriangulo2 = triangulo2.area();
+		System.out.printf("A área do primeiro triangulo é %2f%n", areaTriangulo2);
 		
 
 		if(areaTriangulo1 > areaTriangulo2) {
-			System.out.printf("O Trangulo com maior área é o primeiro triângulo com área de  %.4f%n", areaTriangulo1);
+			System.out.printf("O Trangulo com maior área é o primeiro triângulo com área de  %.4f%s%n", areaTriangulo1, "cm");
 		}else {
-			System.out.printf("O Trangulo com maior área é o segundo triângulo com área de %.4f%n", areaTriangulo2);
+			System.out.printf("O Trangulo com maior área é o segundo triângulo com área de %.4f%s%n", areaTriangulo2, "cm");
 		}
 		
 		
